@@ -22,6 +22,19 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
 getData();
 
+function addroom() 
+{
+      room_name = document.getElementById("room_name").value;
+      
+      firebase.database().ref("/").child(room_name).update({
+            purpose : "adding room"
+        }); 
+
+      localStorage.setItem("room_name", room_name);
+
+      window.location = "kwitter_page.html";
+}
+
 function redirectToRoomName(name) 
 {
       console.log(name);
