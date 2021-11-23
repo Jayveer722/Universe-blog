@@ -1,19 +1,16 @@
-var firebaseConfig = {
-      apiKey: "AIzaSyDTd6E1yokeTY_exMFE8hr-NfHsH8QsaQU",
-      authDomain: "numeric-oarlock-315115.firebaseapp.com",
-      databaseURL: "https://numeric-oarlock-315115-default-rtdb.firebaseio.com",
-      projectId: "numeric-oarlock-315115",
-      storageBucket: "numeric-oarlock-315115.appspot.com",
-      messagingSenderId: "608240830499",
-      appId: "1:608240830499:web:6b092fb1315f733ff28996",
-      measurementId: "G-F7JZBNJS30"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+const firebaseConfig = {
+  apiKey: "AIzaSyA8Pwzz_osjfs6UabPRyajn6myUIh7j2NI",
+  authDomain: "my-gasp-chat.firebaseapp.com",
+  databaseURL: "https://my-gasp-chat-default-rtdb.firebaseio.com",
+  projectId: "my-gasp-chat",
+  storageBucket: "my-gasp-chat.appspot.com",
+  messagingSenderId: "531639972163",
+  appId: "1:531639972163:web:571a24d12ca95b43913ff6",
+  measurementId: "G-WM49BKDZX3"
+};
 
-
-
-
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 //YOUR FIRE BASE LINKS
 
 	user_name = localStorage.getItem("user_name");
